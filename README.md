@@ -51,7 +51,6 @@ Primarily a personal project, but if you can use it by all means do.
 ## Installation:
 0. Install the Trello Scheduler CLI through pip as shown above.
 1.  Run ```nano ~/.bashrc``` to open up bash, then add the enivornment variables "TRELLO_API_KEY", "TRELLO_API_SECRET", and "TRELLO_TOKEN".  For more information on getting them, please see: http://www.trello.org/help.html
-
 3.  Run ```python3 trellobotrunner.py buildweek``` to create the necessary infrastructure.
 
 ## Schedule.json File
