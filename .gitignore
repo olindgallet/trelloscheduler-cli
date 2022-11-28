@@ -1,4 +1,7 @@
 .venv
 dist
 *.json
+*.png
+*.txt
 __pycache__
+PKG-INFO

@@ -1,4 +1,4 @@
-# trellobot
+# trelloscheduler-cli
 Bot for automating schedule management in Trello.  Intended use is to place the bot skeleton on a cloud server, set up commands with cron, and let it do 
 its thing.
 
@@ -14,16 +14,16 @@ Primarily a personal project, but if you can use it by all means do.
 
 *[Usage]*
 
- ``` python3 trellobot [command : startweek OR buildweek OR endweek OR loadweek] [schedule file IF loadweek]```
+ ``` trelloschedulercli [command : startweek OR buildweek OR endweek OR loadweek] [schedule file IF loadweek]```
  
-  Trello bot is used to automate tasks related to creating a weekly schedule in Trello.
+  Trello scheduler CLI is a command line interface used to automate tasks related to creating a weekly schedule in Trello.
   All you need is a valid Trello account to access the various commands.
   
 *[Commands]*
 
   **buildweek**
   
-  EX: ```python3 trellobotrunner.py buildweek```
+  EX: ```trelloschedulercli buildweek```
 
   Create a new weekly schedule board and recycle bin board.  They will show up as "Weekly Schedule"
  and "Recycle Bin" in Trello.
@@ -31,19 +31,19 @@ Primarily a personal project, but if you can use it by all means do.
 
   **startweek**
   
-  EX: ```python3 trellobotrunner.py startweek```
+  EX: ```trelloschedulercli startweek```
 
   Starts a week by adding empty lists to the "Weekly Schedule" board.
 
   **endweek**
   
-  EX: ```python3 trellobotrunner.py endweek```
+  EX: ```trelloschedulercli endweek```
 
   Archives all of the lists in the "Weekly Schedule" board.
 
   **loadweek**
   
-  EX: ```python3 trellobotrunner.py loadweek "filename"```
+  EX: ```trelloschedulercli loadweek "filename"```
 
   Loads a schedule file in JSON format into the "Weekly Schedule" board.
   Currently supports named days and numerical days.
