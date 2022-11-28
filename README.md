@@ -4,6 +4,9 @@ its thing.
 
 Primarily a personal project, but if you can use it by all means do.  
 
+## Pypi location:
+https://pypi.org/project/trelloscheduler-cli/1.0.0/
+
 ## Supported features:
 1. buildweek - Builds the infrastructure (a "Weekly Schedule" board and "Recycle Bin" board) for the bot.
 2. startweek - Starts the week by adding empty lists with the day names and dates to the "Weekly Schedule" board.
