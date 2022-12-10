@@ -1,12 +1,12 @@
 # Author: Olin Gallet
 # Date: 14 Oct 2022
-from .trellobot import TrelloBot as tb
-from .system.environment import Environment as Env
-from .system.terminal import Terminal
-from .exceptions.environmentvarsnotsetexception import EnvironmentVarsNotSetException
+from .trellobot.trellobot import TrelloBot as tb
+from .trellobot.system.environment import Environment as Env
+from .trellobot.system.terminal import Terminal
+from .trellobot.exceptions.environmentvarsnotsetexception import EnvironmentVarsNotSetException
 import sys
 
-if __name__ == '__main__':
+def main():
     if len(sys.argv) <= 1:
         Terminal.display_full_help()     
     else:
@@ -43,3 +43,6 @@ if __name__ == '__main__':
                 Terminal.display_full_help()
         except Exception as ex:
             print(ex)
+
+if __name__ == '__main__':
+   main()
